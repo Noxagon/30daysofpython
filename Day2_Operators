@@ -1,0 +1,62 @@
+import math
+age=21
+height=5.7
+complex_num=6+7j
+print(complex_num)
+
+base=int(input("Enter base: "))
+height2=int(input('Enter height: '))
+print(f"The area of the triangle is {0.5*base*height2}")
+
+side1=int(input("Enter side a: "))
+side2=int(input("Enter side b: "))
+side3=int(input("Enter side c: "))
+print(f"The perimeter of the triangle is {side3+side2+side1}")
+
+length=int(input())
+width=int(input())
+area=length*width
+perimeter=2*(length+width)
+print(perimeter)
+
+radius=int(input())
+pi=3.14
+area2=pi*(radius**2)
+circumference=2*pi*radius
+print(area2, circumference)
+#Calculate the slope, x-intercept and y-intercept of y = 2x -2
+m,b=2,-2
+x_intercept=(-b)/m
+y_intercept=b
+x1,y1=2,2
+x2,y2=6,10
+print(f"Are the slopes the same? Ans.: {((y2-y1)/(x2-x1))==m}")
+print(f"Euclidean distance: {math.sqrt(((x1-x2)**2)+((y1-y2)**2))}")
+#Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+word1="python"
+word2="dragon"
+length_word1=len(word1)
+length_word2=len(word2)
+print(length_word1-length_word2)
+#I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+sentence="I hope this course is not full of jargon."
+print("jargon" in sentence)
+print("on" in word1)
+print("on" in word2)
+int_length_word1=length_word1
+float_length_word1=float(length_word1)
+num=int(input())
+if num%2 == 0:
+    print("Number is even")
+else:
+    print("Number is not even")
+print((7//3)==(int(2.7)))
+print(type('10')==type(10))
+print(int(9.8)==10)
+hours=int(input("Enter hours: "))
+rate_per_hr=int(input("Enter rate per hour: "))
+print(f"Your weekly earning is: {hours*rate_per_hr}")
+num_of_yrs=int(input("Enter Number of years: "))
+print(f"You have lived for {num_of_yrs*365*24*3600} seconds.")
+for i in range(1,6):
+    print(i, (i**0), i, (i**2), (i**3))
